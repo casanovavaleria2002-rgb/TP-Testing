@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "event_id": 1,
+    "customer_username": "customer1",
+    "quantity": 2,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "event_id": 2,
+    "customer_username": "customer1",
+    "quantity": 1,
+    "status": "cancelled"
+  },
+  {
+    "id": 3,
+    "event_id": 1,
+    "customer_username": "customer1",
+    "quantity": 1,
+    "status": "cancelled"
+  },
+  {
+    "id": 4,
+    "event_id": 1,
+    "customer_username": "customer1",
+    "quantity": 1,
+    "status": "cancelled"
+  },
+  {
+    "id": 5,
+    "event_id": 4,
+    "customer_username": "admin1",
+    "quantity": 1,
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "event_id": 4,
+    "customer_username": "admin1",
+    "quantity": 1,
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "event_id": 5,
+    "customer_username": "organizer1",
+    "quantity": 1,
+    "status": "cancelled"
+  },
+  {
+    "id": 8,
+    "event_id": 11,
+    "customer_username": "customer1",
+    "quantity": 1,
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "event_id": 8,
+    "customer_username": "customer1",
+    "quantity": 5,
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "event_id": 7,
+    "customer_username": "customer1",
+    "quantity": 1,
+    "status": "active"
+  },
+  {
+    "id": 11,
+    "event_id": 7,
+    "customer_username": "customer1",
+    "quantity": 1,
+    "status": "active"
+  },
+  {
+    "id": 12,
+    "event_id": 7,
+    "customer_username": "customer1",
+    "quantity": 1,
+    "status": "active"
+  }
+]

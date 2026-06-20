@@ -1,0 +1,363 @@
+{
+  "id": "233aab22-473b-4ae1-8d3b-4b0e74bf733a",
+  "version": "2.0",
+  "name": "TP Testing",
+  "url": "http://127.0.0.1:8000/",
+  "tests": [{
+    "id": "38450d30-24a8-4aef-87c0-bfcf3827386d",
+    "name": "Inicio de sesión (Log in) como customer",
+    "commands": [{
+      "id": "42ab56bc-8a4d-48da-82c0-577216eed577",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c17dbd1c-9931-49ef-9159-ea02fec50ebc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6a2ec5d-84f4-41a1-b284-a1fae799e42d",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=sessionInfo",
+      "targets": [
+        ["id=sessionInfo", "id"],
+        ["css=#sessionInfo", "css:finder"],
+        ["xpath=//div[@id='sessionInfo']", "xpath:attributes"],
+        ["xpath=//div[@id='sessionBox']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": "No hay usuario autenticado."
+    }, {
+      "id": "9a17624e-6639-43cd-afbc-aef2a52d975f",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUsername",
+      "targets": [
+        ["id=loginUsername", "id"],
+        ["css=#loginUsername", "css:finder"],
+        ["xpath=//input[@id='loginUsername']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d7c6974-0053-45ef-b146-019edbd9d10a",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUsername",
+      "targets": [
+        ["id=loginUsername", "id"],
+        ["css=#loginUsername", "css:finder"],
+        ["xpath=//input[@id='loginUsername']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "customer1"
+    }, {
+      "id": "f3d04c9a-f3f9-4620-8f71-7c4e0835842e",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a5ab5a5-303a-429b-bfc7-a1c765e8bb03",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "cust123"
+    }, {
+      "id": "a4d78e29-4777-4830-b96f-524a8ef3d034",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//section[3]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7298b774-0a13-4b6a-bc25-ccbe8551d77f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//section[3]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba0b9a20-6beb-4a55-a35f-cb654e1297e0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//section[3]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f945b1e-1f68-4573-91e2-3e57f1852be3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,270.3999938964844)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10b30698-02c2-4857-9bf6-0fa83a1a2cac",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#sessionInfo > strong",
+      "targets": [
+        ["css=#sessionInfo > strong", "css:finder"],
+        ["xpath=//div[@id='sessionInfo']/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'customer1')]", "xpath:innerText"]
+      ],
+      "value": "customer1"
+    }]
+  }, {
+    "id": "788bd6d6-e912-4cf9-9eba-32f7127fe080",
+    "name": "Creación de un evento como administrador",
+    "commands": [{
+      "id": "bf3b38a6-f5a3-45e6-8977-3fbac6e4bb64",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76414cc2-6307-406d-8bc9-4843765e607f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "387a6877-a4c0-4abe-8f22-c34e416ad4b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginUsername",
+      "targets": [
+        ["id=loginUsername", "id"],
+        ["css=#loginUsername", "css:finder"],
+        ["xpath=//input[@id='loginUsername']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7bd1f90-810f-46f7-a6a7-f0d755126d64",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginUsername",
+      "targets": [
+        ["id=loginUsername", "id"],
+        ["css=#loginUsername", "css:finder"],
+        ["xpath=//input[@id='loginUsername']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin1"
+    }, {
+      "id": "08e75473-eff3-434b-88e5-b24007caa4d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15eef3c9-1c8d-4080-81c6-16cb038713c6",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "462b89b1-d8cd-4c3f-ba90-766df5a51fe7",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginButton",
+      "targets": [
+        ["id=loginButton", "id"],
+        ["css=#loginButton", "css:finder"],
+        ["xpath=//button[@id='loginButton']", "xpath:attributes"],
+        ["xpath=//section[3]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b02ead32-7b93-41c2-994f-2a24830766ca",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,261.6000061035156)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb76ef8d-48f5-4fa8-8ef6-855481914dbe",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.event-card:nth-child(3) > h3",
+      "targets": [
+        ["css=.event-card:nth-child(3) > h3", "css:finder"],
+        ["xpath=//div[@id='eventsContainer']/div[3]/h3", "xpath:idRelative"],
+        ["xpath=//div[3]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Test de automatización con Selenium')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26e26c15-2ab6-4ae7-b60d-7ea1ddc5544c",
+      "comment": "",
+      "command": "click",
+      "target": "id=eventName",
+      "targets": [
+        ["id=eventName", "id"],
+        ["css=#eventName", "css:finder"],
+        ["xpath=//input[@id='eventName']", "xpath:attributes"],
+        ["xpath=//section[@id='createEventSection']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbcfb083-e5c3-4aac-9714-fabadf269028",
+      "comment": "",
+      "command": "type",
+      "target": "id=eventName",
+      "targets": [
+        ["id=eventName", "id"],
+        ["css=#eventName", "css:finder"],
+        ["xpath=//input[@id='eventName']", "xpath:attributes"],
+        ["xpath=//section[@id='createEventSection']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Test de automatización con Selenium"
+    }, {
+      "id": "8d077039-d03a-47ad-818c-478269742006",
+      "comment": "",
+      "command": "click",
+      "target": "id=eventDate",
+      "targets": [
+        ["id=eventDate", "id"],
+        ["css=#eventDate", "css:finder"],
+        ["xpath=//input[@id='eventDate']", "xpath:attributes"],
+        ["xpath=//section[@id='createEventSection']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0ae9255-7c75-49dc-8305-da565d65e467",
+      "comment": "",
+      "command": "type",
+      "target": "id=eventDate",
+      "targets": [
+        ["id=eventDate", "id"],
+        ["css=#eventDate", "css:finder"],
+        ["xpath=//input[@id='eventDate']", "xpath:attributes"],
+        ["xpath=//section[@id='createEventSection']/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//section[5]/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2026-06-06"
+    }, {
+      "id": "072ec851-336d-4262-9437-ff9e4caa50a7",
+      "comment": "",
+      "command": "type",
+      "target": "id=eventCapacity",
+      "targets": [
+        ["id=eventCapacity", "id"],
+        ["css=#eventCapacity", "css:finder"],
+        ["xpath=//input[@id='eventCapacity']", "xpath:attributes"],
+        ["xpath=//section[@id='createEventSection']/div/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "4ff45d80-88fe-406e-8701-300703d13493",
+      "comment": "",
+      "command": "type",
+      "target": "id=eventPrice",
+      "targets": [
+        ["id=eventPrice", "id"],
+        ["css=#eventPrice", "css:finder"],
+        ["xpath=//input[@id='eventPrice']", "xpath:attributes"],
+        ["xpath=//section[@id='createEventSection']/div/div[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "fa845030-4af6-40d8-a639-aac81c718940",
+      "comment": "",
+      "command": "click",
+      "target": "id=createEventButton",
+      "targets": [
+        ["id=createEventButton", "id"],
+        ["css=#createEventButton", "css:finder"],
+        ["xpath=//button[@id='createEventButton']", "xpath:attributes"],
+        ["xpath=//section[@id='createEventSection']/div/button", "xpath:idRelative"],
+        ["xpath=//section[5]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear evento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83afba78-7e84-4583-960d-794c44310143",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1109.5999755859375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1dc4ed6-d5e9-4761-b665-dc635fd26fc0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.event-card:nth-child(3) > h3",
+      "targets": [
+        ["css=.event-card:nth-child(3) > h3", "css:finder"],
+        ["xpath=//div[@id='eventsContainer']/div[3]/h3", "xpath:idRelative"],
+        ["xpath=//div[3]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Test de automatización con Selenium')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1bd9b59c-9293-4852-bb92-41bb980ea759",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:8000/"],
+  "plugins": []
+}
